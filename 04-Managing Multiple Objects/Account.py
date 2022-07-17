@@ -2,6 +2,9 @@
 # Errors indicated by "raise" statements
 
 # Define a custom exception
+from logging import getLogger
+
+
 class AbortTransaction(Exception):
     '''raise this exception to abort a bank transaction'''
     pass
